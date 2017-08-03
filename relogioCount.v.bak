@@ -1,0 +1,44 @@
+module relogioCount(clk, miliseconds, seconds, minutes, hours);
+	input clk;
+	output [8:0] miliseconds;
+	output [7:0] seconds;
+	output [7:0] minutes;
+	output [6:0] hours;
+	reg [8:0] miliseconds;
+	reg [7:0] seconds;
+	reg [7:0] minutes;
+	reg [6:0] hours;
+	
+	always@(posedge clk) begin
+		miliseconds = miliseconds + 1;
+	end
+		
+	always@(miliseconds) begin
+		if(miliseconds == 7'b1100100)
+		begin
+		miliseconds = 0;
+		seconds = seconds + 1;
+		end
+	end
+	
+	always@(seconds) begin
+		if(seconds == 6'b111100)
+		begin
+		seconds = 0;
+		minutes = minutes + 1;
+		end
+	end
+	
+	always@(minutes) begin
+		if(minutes == 6'b111100)
+		begin
+		minutes = 0;
+		hours = hours + 1;
+		end
+	end
+	
+	always@(hours) begin
+		if(hours == 5'b11000) hours = 0;		
+	end
+		
+	endmodule	

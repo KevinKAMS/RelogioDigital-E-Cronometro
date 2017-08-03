@@ -1,0 +1,405 @@
+Simulator report for relogio
+Fri Jun 09 02:32:14 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 113 nodes    ;
+; Simulation Coverage         ;      27.66 % ;
+; Total Number of Transitions ; 3864         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C6  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      27.66 % ;
+; Total nodes checked                                 ; 113          ;
+; Total output ports checked                          ; 141          ;
+; Total output ports with complete 1/0-value coverage ; 39           ;
+; Total output ports with no 1/0-value coverage       ; 100          ;
+; Total output ports with no 1-value coverage         ; 100          ;
+; Total output ports with no 0-value coverage         ; 102          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                              ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |relogio|relogioCount:inst|Add0~0         ; |relogio|relogioCount:inst|Add0~0         ; combout          ;
+; |relogio|relogioCount:inst|Add0~0         ; |relogio|relogioCount:inst|Add0~1         ; cout             ;
+; |relogio|relogioCount:inst|Add0~2         ; |relogio|relogioCount:inst|Add0~2         ; combout          ;
+; |relogio|relogioCount:inst|Add0~2         ; |relogio|relogioCount:inst|Add0~3         ; cout             ;
+; |relogio|relogioCount:inst|Add0~4         ; |relogio|relogioCount:inst|Add0~4         ; combout          ;
+; |relogio|relogioCount:inst|Add0~4         ; |relogio|relogioCount:inst|Add0~5         ; cout             ;
+; |relogio|relogioCount:inst|Add0~6         ; |relogio|relogioCount:inst|Add0~6         ; combout          ;
+; |relogio|relogioCount:inst|Add0~6         ; |relogio|relogioCount:inst|Add0~7         ; cout             ;
+; |relogio|relogioCount:inst|Add0~8         ; |relogio|relogioCount:inst|Add0~8         ; combout          ;
+; |relogio|relogioCount:inst|Add0~8         ; |relogio|relogioCount:inst|Add0~9         ; cout             ;
+; |relogio|relogioCount:inst|Add0~10        ; |relogio|relogioCount:inst|Add0~10        ; combout          ;
+; |relogio|relogioCount:inst|Add0~10        ; |relogio|relogioCount:inst|Add0~11        ; cout             ;
+; |relogio|relogioCount:inst|Add0~12        ; |relogio|relogioCount:inst|Add0~12        ; combout          ;
+; |relogio|relogioCount:inst|seconds[0]~8   ; |relogio|relogioCount:inst|seconds[0]~8   ; combout          ;
+; |relogio|relogioCount:inst|seconds[0]~8   ; |relogio|relogioCount:inst|seconds[0]~9   ; cout             ;
+; |relogio|relogioCount:inst|seconds[1]~10  ; |relogio|relogioCount:inst|seconds[1]~10  ; combout          ;
+; |relogio|relogioCount:inst|miliseconds[6] ; |relogio|relogioCount:inst|miliseconds[6] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[5] ; |relogio|relogioCount:inst|miliseconds[5] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[4] ; |relogio|relogioCount:inst|miliseconds[4] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[3] ; |relogio|relogioCount:inst|miliseconds[3] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[2] ; |relogio|relogioCount:inst|miliseconds[2] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[1] ; |relogio|relogioCount:inst|miliseconds[1] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[0] ; |relogio|relogioCount:inst|miliseconds[0] ; regout           ;
+; |relogio|relogioCount:inst|Equal0~0       ; |relogio|relogioCount:inst|Equal0~0       ; combout          ;
+; |relogio|relogioCount:inst|Equal0~1       ; |relogio|relogioCount:inst|Equal0~1       ; combout          ;
+; |relogio|relogioCount:inst|miliseconds~0  ; |relogio|relogioCount:inst|miliseconds~0  ; combout          ;
+; |relogio|relogioCount:inst|miliseconds~1  ; |relogio|relogioCount:inst|miliseconds~1  ; combout          ;
+; |relogio|relogioCount:inst|miliseconds~2  ; |relogio|relogioCount:inst|miliseconds~2  ; combout          ;
+; |relogio|relogioCount:inst|miliseconds~3  ; |relogio|relogioCount:inst|miliseconds~3  ; combout          ;
+; |relogio|relogioCount:inst|Equal0~2       ; |relogio|relogioCount:inst|Equal0~2       ; combout          ;
+; |relogio|miliseconds[6]                   ; |relogio|miliseconds[6]                   ; padio            ;
+; |relogio|miliseconds[5]                   ; |relogio|miliseconds[5]                   ; padio            ;
+; |relogio|miliseconds[4]                   ; |relogio|miliseconds[4]                   ; padio            ;
+; |relogio|miliseconds[3]                   ; |relogio|miliseconds[3]                   ; padio            ;
+; |relogio|miliseconds[2]                   ; |relogio|miliseconds[2]                   ; padio            ;
+; |relogio|miliseconds[1]                   ; |relogio|miliseconds[1]                   ; padio            ;
+; |relogio|miliseconds[0]                   ; |relogio|miliseconds[0]                   ; padio            ;
+; |relogio|clk                              ; |relogio|clk~corein                       ; combout          ;
+; |relogio|clk~clkctrl                      ; |relogio|clk~clkctrl                      ; outclk           ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                 ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |relogio|relogioCount:inst|hours[6]       ; |relogio|relogioCount:inst|hours[6]       ; regout           ;
+; |relogio|relogioCount:inst|hours[5]       ; |relogio|relogioCount:inst|hours[5]       ; regout           ;
+; |relogio|relogioCount:inst|hours[4]       ; |relogio|relogioCount:inst|hours[4]       ; regout           ;
+; |relogio|relogioCount:inst|hours[3]       ; |relogio|relogioCount:inst|hours[3]       ; regout           ;
+; |relogio|relogioCount:inst|hours[2]       ; |relogio|relogioCount:inst|hours[2]       ; regout           ;
+; |relogio|relogioCount:inst|hours[1]       ; |relogio|relogioCount:inst|hours[1]       ; regout           ;
+; |relogio|relogioCount:inst|hours[0]       ; |relogio|relogioCount:inst|hours[0]       ; regout           ;
+; |relogio|relogioCount:inst|minutes[7]     ; |relogio|relogioCount:inst|minutes[7]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[6]     ; |relogio|relogioCount:inst|minutes[6]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[5]     ; |relogio|relogioCount:inst|minutes[5]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[4]     ; |relogio|relogioCount:inst|minutes[4]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[3]     ; |relogio|relogioCount:inst|minutes[3]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[2]     ; |relogio|relogioCount:inst|minutes[2]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[1]     ; |relogio|relogioCount:inst|minutes[1]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[0]     ; |relogio|relogioCount:inst|minutes[0]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[7]     ; |relogio|relogioCount:inst|seconds[7]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[6]     ; |relogio|relogioCount:inst|seconds[6]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[5]     ; |relogio|relogioCount:inst|seconds[5]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[4]     ; |relogio|relogioCount:inst|seconds[4]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[3]     ; |relogio|relogioCount:inst|seconds[3]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[2]     ; |relogio|relogioCount:inst|seconds[2]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[1]     ; |relogio|relogioCount:inst|seconds[1]     ; regout           ;
+; |relogio|relogioCount:inst|hours[0]~7     ; |relogio|relogioCount:inst|hours[0]~7     ; combout          ;
+; |relogio|relogioCount:inst|hours[0]~7     ; |relogio|relogioCount:inst|hours[0]~8     ; cout             ;
+; |relogio|relogioCount:inst|hours[1]~9     ; |relogio|relogioCount:inst|hours[1]~9     ; combout          ;
+; |relogio|relogioCount:inst|hours[1]~9     ; |relogio|relogioCount:inst|hours[1]~10    ; cout             ;
+; |relogio|relogioCount:inst|hours[2]~11    ; |relogio|relogioCount:inst|hours[2]~11    ; combout          ;
+; |relogio|relogioCount:inst|hours[2]~11    ; |relogio|relogioCount:inst|hours[2]~12    ; cout             ;
+; |relogio|relogioCount:inst|hours[3]~13    ; |relogio|relogioCount:inst|hours[3]~13    ; combout          ;
+; |relogio|relogioCount:inst|hours[3]~13    ; |relogio|relogioCount:inst|hours[3]~14    ; cout             ;
+; |relogio|relogioCount:inst|hours[4]~15    ; |relogio|relogioCount:inst|hours[4]~15    ; combout          ;
+; |relogio|relogioCount:inst|hours[4]~15    ; |relogio|relogioCount:inst|hours[4]~16    ; cout             ;
+; |relogio|relogioCount:inst|hours[5]~17    ; |relogio|relogioCount:inst|hours[5]~17    ; combout          ;
+; |relogio|relogioCount:inst|hours[5]~17    ; |relogio|relogioCount:inst|hours[5]~18    ; cout             ;
+; |relogio|relogioCount:inst|hours[6]~19    ; |relogio|relogioCount:inst|hours[6]~19    ; combout          ;
+; |relogio|relogioCount:inst|Add0~12        ; |relogio|relogioCount:inst|Add0~13        ; cout             ;
+; |relogio|relogioCount:inst|Add0~14        ; |relogio|relogioCount:inst|Add0~14        ; combout          ;
+; |relogio|relogioCount:inst|Add0~14        ; |relogio|relogioCount:inst|Add0~15        ; cout             ;
+; |relogio|relogioCount:inst|Add0~16        ; |relogio|relogioCount:inst|Add0~16        ; combout          ;
+; |relogio|relogioCount:inst|minutes[0]~8   ; |relogio|relogioCount:inst|minutes[0]~8   ; combout          ;
+; |relogio|relogioCount:inst|minutes[0]~8   ; |relogio|relogioCount:inst|minutes[0]~9   ; cout             ;
+; |relogio|relogioCount:inst|minutes[1]~10  ; |relogio|relogioCount:inst|minutes[1]~10  ; combout          ;
+; |relogio|relogioCount:inst|minutes[1]~10  ; |relogio|relogioCount:inst|minutes[1]~11  ; cout             ;
+; |relogio|relogioCount:inst|minutes[2]~12  ; |relogio|relogioCount:inst|minutes[2]~12  ; combout          ;
+; |relogio|relogioCount:inst|minutes[2]~12  ; |relogio|relogioCount:inst|minutes[2]~13  ; cout             ;
+; |relogio|relogioCount:inst|minutes[3]~14  ; |relogio|relogioCount:inst|minutes[3]~14  ; combout          ;
+; |relogio|relogioCount:inst|minutes[3]~14  ; |relogio|relogioCount:inst|minutes[3]~15  ; cout             ;
+; |relogio|relogioCount:inst|minutes[4]~16  ; |relogio|relogioCount:inst|minutes[4]~16  ; combout          ;
+; |relogio|relogioCount:inst|minutes[4]~16  ; |relogio|relogioCount:inst|minutes[4]~17  ; cout             ;
+; |relogio|relogioCount:inst|minutes[5]~18  ; |relogio|relogioCount:inst|minutes[5]~18  ; combout          ;
+; |relogio|relogioCount:inst|minutes[5]~18  ; |relogio|relogioCount:inst|minutes[5]~19  ; cout             ;
+; |relogio|relogioCount:inst|minutes[6]~20  ; |relogio|relogioCount:inst|minutes[6]~20  ; combout          ;
+; |relogio|relogioCount:inst|minutes[6]~20  ; |relogio|relogioCount:inst|minutes[6]~21  ; cout             ;
+; |relogio|relogioCount:inst|minutes[7]~22  ; |relogio|relogioCount:inst|minutes[7]~22  ; combout          ;
+; |relogio|relogioCount:inst|seconds[1]~10  ; |relogio|relogioCount:inst|seconds[1]~11  ; cout             ;
+; |relogio|relogioCount:inst|seconds[2]~12  ; |relogio|relogioCount:inst|seconds[2]~12  ; combout          ;
+; |relogio|relogioCount:inst|seconds[2]~12  ; |relogio|relogioCount:inst|seconds[2]~13  ; cout             ;
+; |relogio|relogioCount:inst|seconds[3]~14  ; |relogio|relogioCount:inst|seconds[3]~14  ; combout          ;
+; |relogio|relogioCount:inst|seconds[3]~14  ; |relogio|relogioCount:inst|seconds[3]~15  ; cout             ;
+; |relogio|relogioCount:inst|seconds[4]~16  ; |relogio|relogioCount:inst|seconds[4]~16  ; combout          ;
+; |relogio|relogioCount:inst|seconds[4]~16  ; |relogio|relogioCount:inst|seconds[4]~17  ; cout             ;
+; |relogio|relogioCount:inst|seconds[5]~18  ; |relogio|relogioCount:inst|seconds[5]~18  ; combout          ;
+; |relogio|relogioCount:inst|seconds[5]~18  ; |relogio|relogioCount:inst|seconds[5]~19  ; cout             ;
+; |relogio|relogioCount:inst|seconds[6]~20  ; |relogio|relogioCount:inst|seconds[6]~20  ; combout          ;
+; |relogio|relogioCount:inst|seconds[6]~20  ; |relogio|relogioCount:inst|seconds[6]~21  ; cout             ;
+; |relogio|relogioCount:inst|seconds[7]~22  ; |relogio|relogioCount:inst|seconds[7]~22  ; combout          ;
+; |relogio|relogioCount:inst|miliseconds[8] ; |relogio|relogioCount:inst|miliseconds[8] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[7] ; |relogio|relogioCount:inst|miliseconds[7] ; regout           ;
+; |relogio|relogioCount:inst|Equal2~0       ; |relogio|relogioCount:inst|Equal2~0       ; combout          ;
+; |relogio|relogioCount:inst|Equal2~1       ; |relogio|relogioCount:inst|Equal2~1       ; combout          ;
+; |relogio|relogioCount:inst|Equal2~2       ; |relogio|relogioCount:inst|Equal2~2       ; combout          ;
+; |relogio|relogioCount:inst|Equal3~0       ; |relogio|relogioCount:inst|Equal3~0       ; combout          ;
+; |relogio|relogioCount:inst|Equal3~1       ; |relogio|relogioCount:inst|Equal3~1       ; combout          ;
+; |relogio|relogioCount:inst|Equal1~0       ; |relogio|relogioCount:inst|Equal1~0       ; combout          ;
+; |relogio|relogioCount:inst|Equal1~1       ; |relogio|relogioCount:inst|Equal1~1       ; combout          ;
+; |relogio|relogioCount:inst|Equal1~2       ; |relogio|relogioCount:inst|Equal1~2       ; combout          ;
+; |relogio|hours[6]                         ; |relogio|hours[6]                         ; padio            ;
+; |relogio|hours[5]                         ; |relogio|hours[5]                         ; padio            ;
+; |relogio|hours[4]                         ; |relogio|hours[4]                         ; padio            ;
+; |relogio|hours[3]                         ; |relogio|hours[3]                         ; padio            ;
+; |relogio|hours[2]                         ; |relogio|hours[2]                         ; padio            ;
+; |relogio|hours[1]                         ; |relogio|hours[1]                         ; padio            ;
+; |relogio|hours[0]                         ; |relogio|hours[0]                         ; padio            ;
+; |relogio|miliseconds[8]                   ; |relogio|miliseconds[8]                   ; padio            ;
+; |relogio|miliseconds[7]                   ; |relogio|miliseconds[7]                   ; padio            ;
+; |relogio|minutes[7]                       ; |relogio|minutes[7]                       ; padio            ;
+; |relogio|minutes[6]                       ; |relogio|minutes[6]                       ; padio            ;
+; |relogio|minutes[5]                       ; |relogio|minutes[5]                       ; padio            ;
+; |relogio|minutes[4]                       ; |relogio|minutes[4]                       ; padio            ;
+; |relogio|minutes[3]                       ; |relogio|minutes[3]                       ; padio            ;
+; |relogio|minutes[2]                       ; |relogio|minutes[2]                       ; padio            ;
+; |relogio|minutes[1]                       ; |relogio|minutes[1]                       ; padio            ;
+; |relogio|minutes[0]                       ; |relogio|minutes[0]                       ; padio            ;
+; |relogio|seconds[7]                       ; |relogio|seconds[7]                       ; padio            ;
+; |relogio|seconds[6]                       ; |relogio|seconds[6]                       ; padio            ;
+; |relogio|seconds[5]                       ; |relogio|seconds[5]                       ; padio            ;
+; |relogio|seconds[4]                       ; |relogio|seconds[4]                       ; padio            ;
+; |relogio|seconds[3]                       ; |relogio|seconds[3]                       ; padio            ;
+; |relogio|seconds[2]                       ; |relogio|seconds[2]                       ; padio            ;
+; |relogio|seconds[1]                       ; |relogio|seconds[1]                       ; padio            ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                 ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |relogio|relogioCount:inst|hours[6]       ; |relogio|relogioCount:inst|hours[6]       ; regout           ;
+; |relogio|relogioCount:inst|hours[5]       ; |relogio|relogioCount:inst|hours[5]       ; regout           ;
+; |relogio|relogioCount:inst|hours[4]       ; |relogio|relogioCount:inst|hours[4]       ; regout           ;
+; |relogio|relogioCount:inst|hours[3]       ; |relogio|relogioCount:inst|hours[3]       ; regout           ;
+; |relogio|relogioCount:inst|hours[2]       ; |relogio|relogioCount:inst|hours[2]       ; regout           ;
+; |relogio|relogioCount:inst|hours[1]       ; |relogio|relogioCount:inst|hours[1]       ; regout           ;
+; |relogio|relogioCount:inst|hours[0]       ; |relogio|relogioCount:inst|hours[0]       ; regout           ;
+; |relogio|relogioCount:inst|minutes[7]     ; |relogio|relogioCount:inst|minutes[7]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[6]     ; |relogio|relogioCount:inst|minutes[6]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[5]     ; |relogio|relogioCount:inst|minutes[5]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[4]     ; |relogio|relogioCount:inst|minutes[4]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[3]     ; |relogio|relogioCount:inst|minutes[3]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[2]     ; |relogio|relogioCount:inst|minutes[2]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[1]     ; |relogio|relogioCount:inst|minutes[1]     ; regout           ;
+; |relogio|relogioCount:inst|minutes[0]     ; |relogio|relogioCount:inst|minutes[0]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[7]     ; |relogio|relogioCount:inst|seconds[7]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[6]     ; |relogio|relogioCount:inst|seconds[6]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[5]     ; |relogio|relogioCount:inst|seconds[5]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[4]     ; |relogio|relogioCount:inst|seconds[4]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[3]     ; |relogio|relogioCount:inst|seconds[3]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[2]     ; |relogio|relogioCount:inst|seconds[2]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[1]     ; |relogio|relogioCount:inst|seconds[1]     ; regout           ;
+; |relogio|relogioCount:inst|seconds[0]     ; |relogio|relogioCount:inst|seconds[0]     ; regout           ;
+; |relogio|relogioCount:inst|hours[0]~7     ; |relogio|relogioCount:inst|hours[0]~7     ; combout          ;
+; |relogio|relogioCount:inst|hours[0]~7     ; |relogio|relogioCount:inst|hours[0]~8     ; cout             ;
+; |relogio|relogioCount:inst|hours[1]~9     ; |relogio|relogioCount:inst|hours[1]~9     ; combout          ;
+; |relogio|relogioCount:inst|hours[1]~9     ; |relogio|relogioCount:inst|hours[1]~10    ; cout             ;
+; |relogio|relogioCount:inst|hours[2]~11    ; |relogio|relogioCount:inst|hours[2]~11    ; combout          ;
+; |relogio|relogioCount:inst|hours[2]~11    ; |relogio|relogioCount:inst|hours[2]~12    ; cout             ;
+; |relogio|relogioCount:inst|hours[3]~13    ; |relogio|relogioCount:inst|hours[3]~13    ; combout          ;
+; |relogio|relogioCount:inst|hours[3]~13    ; |relogio|relogioCount:inst|hours[3]~14    ; cout             ;
+; |relogio|relogioCount:inst|hours[4]~15    ; |relogio|relogioCount:inst|hours[4]~15    ; combout          ;
+; |relogio|relogioCount:inst|hours[4]~15    ; |relogio|relogioCount:inst|hours[4]~16    ; cout             ;
+; |relogio|relogioCount:inst|hours[5]~17    ; |relogio|relogioCount:inst|hours[5]~17    ; combout          ;
+; |relogio|relogioCount:inst|hours[5]~17    ; |relogio|relogioCount:inst|hours[5]~18    ; cout             ;
+; |relogio|relogioCount:inst|hours[6]~19    ; |relogio|relogioCount:inst|hours[6]~19    ; combout          ;
+; |relogio|relogioCount:inst|Add0~12        ; |relogio|relogioCount:inst|Add0~13        ; cout             ;
+; |relogio|relogioCount:inst|Add0~14        ; |relogio|relogioCount:inst|Add0~14        ; combout          ;
+; |relogio|relogioCount:inst|Add0~14        ; |relogio|relogioCount:inst|Add0~15        ; cout             ;
+; |relogio|relogioCount:inst|Add0~16        ; |relogio|relogioCount:inst|Add0~16        ; combout          ;
+; |relogio|relogioCount:inst|minutes[0]~8   ; |relogio|relogioCount:inst|minutes[0]~8   ; combout          ;
+; |relogio|relogioCount:inst|minutes[0]~8   ; |relogio|relogioCount:inst|minutes[0]~9   ; cout             ;
+; |relogio|relogioCount:inst|minutes[1]~10  ; |relogio|relogioCount:inst|minutes[1]~10  ; combout          ;
+; |relogio|relogioCount:inst|minutes[1]~10  ; |relogio|relogioCount:inst|minutes[1]~11  ; cout             ;
+; |relogio|relogioCount:inst|minutes[2]~12  ; |relogio|relogioCount:inst|minutes[2]~12  ; combout          ;
+; |relogio|relogioCount:inst|minutes[2]~12  ; |relogio|relogioCount:inst|minutes[2]~13  ; cout             ;
+; |relogio|relogioCount:inst|minutes[3]~14  ; |relogio|relogioCount:inst|minutes[3]~14  ; combout          ;
+; |relogio|relogioCount:inst|minutes[3]~14  ; |relogio|relogioCount:inst|minutes[3]~15  ; cout             ;
+; |relogio|relogioCount:inst|minutes[4]~16  ; |relogio|relogioCount:inst|minutes[4]~16  ; combout          ;
+; |relogio|relogioCount:inst|minutes[4]~16  ; |relogio|relogioCount:inst|minutes[4]~17  ; cout             ;
+; |relogio|relogioCount:inst|minutes[5]~18  ; |relogio|relogioCount:inst|minutes[5]~18  ; combout          ;
+; |relogio|relogioCount:inst|minutes[5]~18  ; |relogio|relogioCount:inst|minutes[5]~19  ; cout             ;
+; |relogio|relogioCount:inst|minutes[6]~20  ; |relogio|relogioCount:inst|minutes[6]~20  ; combout          ;
+; |relogio|relogioCount:inst|minutes[6]~20  ; |relogio|relogioCount:inst|minutes[6]~21  ; cout             ;
+; |relogio|relogioCount:inst|minutes[7]~22  ; |relogio|relogioCount:inst|minutes[7]~22  ; combout          ;
+; |relogio|relogioCount:inst|seconds[1]~10  ; |relogio|relogioCount:inst|seconds[1]~11  ; cout             ;
+; |relogio|relogioCount:inst|seconds[2]~12  ; |relogio|relogioCount:inst|seconds[2]~12  ; combout          ;
+; |relogio|relogioCount:inst|seconds[2]~12  ; |relogio|relogioCount:inst|seconds[2]~13  ; cout             ;
+; |relogio|relogioCount:inst|seconds[3]~14  ; |relogio|relogioCount:inst|seconds[3]~14  ; combout          ;
+; |relogio|relogioCount:inst|seconds[3]~14  ; |relogio|relogioCount:inst|seconds[3]~15  ; cout             ;
+; |relogio|relogioCount:inst|seconds[4]~16  ; |relogio|relogioCount:inst|seconds[4]~16  ; combout          ;
+; |relogio|relogioCount:inst|seconds[4]~16  ; |relogio|relogioCount:inst|seconds[4]~17  ; cout             ;
+; |relogio|relogioCount:inst|seconds[5]~18  ; |relogio|relogioCount:inst|seconds[5]~18  ; combout          ;
+; |relogio|relogioCount:inst|seconds[5]~18  ; |relogio|relogioCount:inst|seconds[5]~19  ; cout             ;
+; |relogio|relogioCount:inst|seconds[6]~20  ; |relogio|relogioCount:inst|seconds[6]~20  ; combout          ;
+; |relogio|relogioCount:inst|seconds[6]~20  ; |relogio|relogioCount:inst|seconds[6]~21  ; cout             ;
+; |relogio|relogioCount:inst|seconds[7]~22  ; |relogio|relogioCount:inst|seconds[7]~22  ; combout          ;
+; |relogio|relogioCount:inst|miliseconds[8] ; |relogio|relogioCount:inst|miliseconds[8] ; regout           ;
+; |relogio|relogioCount:inst|miliseconds[7] ; |relogio|relogioCount:inst|miliseconds[7] ; regout           ;
+; |relogio|relogioCount:inst|Equal2~0       ; |relogio|relogioCount:inst|Equal2~0       ; combout          ;
+; |relogio|relogioCount:inst|Equal2~1       ; |relogio|relogioCount:inst|Equal2~1       ; combout          ;
+; |relogio|relogioCount:inst|Equal2~2       ; |relogio|relogioCount:inst|Equal2~2       ; combout          ;
+; |relogio|relogioCount:inst|Equal3~0       ; |relogio|relogioCount:inst|Equal3~0       ; combout          ;
+; |relogio|relogioCount:inst|Equal3~1       ; |relogio|relogioCount:inst|Equal3~1       ; combout          ;
+; |relogio|relogioCount:inst|Equal1~0       ; |relogio|relogioCount:inst|Equal1~0       ; combout          ;
+; |relogio|relogioCount:inst|Equal1~1       ; |relogio|relogioCount:inst|Equal1~1       ; combout          ;
+; |relogio|relogioCount:inst|Equal1~2       ; |relogio|relogioCount:inst|Equal1~2       ; combout          ;
+; |relogio|hours[6]                         ; |relogio|hours[6]                         ; padio            ;
+; |relogio|hours[5]                         ; |relogio|hours[5]                         ; padio            ;
+; |relogio|hours[4]                         ; |relogio|hours[4]                         ; padio            ;
+; |relogio|hours[3]                         ; |relogio|hours[3]                         ; padio            ;
+; |relogio|hours[2]                         ; |relogio|hours[2]                         ; padio            ;
+; |relogio|hours[1]                         ; |relogio|hours[1]                         ; padio            ;
+; |relogio|hours[0]                         ; |relogio|hours[0]                         ; padio            ;
+; |relogio|miliseconds[8]                   ; |relogio|miliseconds[8]                   ; padio            ;
+; |relogio|miliseconds[7]                   ; |relogio|miliseconds[7]                   ; padio            ;
+; |relogio|minutes[7]                       ; |relogio|minutes[7]                       ; padio            ;
+; |relogio|minutes[6]                       ; |relogio|minutes[6]                       ; padio            ;
+; |relogio|minutes[5]                       ; |relogio|minutes[5]                       ; padio            ;
+; |relogio|minutes[4]                       ; |relogio|minutes[4]                       ; padio            ;
+; |relogio|minutes[3]                       ; |relogio|minutes[3]                       ; padio            ;
+; |relogio|minutes[2]                       ; |relogio|minutes[2]                       ; padio            ;
+; |relogio|minutes[1]                       ; |relogio|minutes[1]                       ; padio            ;
+; |relogio|minutes[0]                       ; |relogio|minutes[0]                       ; padio            ;
+; |relogio|seconds[7]                       ; |relogio|seconds[7]                       ; padio            ;
+; |relogio|seconds[6]                       ; |relogio|seconds[6]                       ; padio            ;
+; |relogio|seconds[5]                       ; |relogio|seconds[5]                       ; padio            ;
+; |relogio|seconds[4]                       ; |relogio|seconds[4]                       ; padio            ;
+; |relogio|seconds[3]                       ; |relogio|seconds[3]                       ; padio            ;
+; |relogio|seconds[2]                       ; |relogio|seconds[2]                       ; padio            ;
+; |relogio|seconds[1]                       ; |relogio|seconds[1]                       ; padio            ;
+; |relogio|seconds[0]                       ; |relogio|seconds[0]                       ; padio            ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Jun 09 02:32:14 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off relogio -c relogio
+Info: Using vector source file "C:/Users/kevin/Desktop/Relogio Digital e Cronometro 2/relogio.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of relogio.vwf called relogio.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      27.66 %
+Info: Number of transitions in simulation is 3864
+Info: Vector file relogio.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 178 megabytes
+    Info: Processing ended: Fri Jun 09 02:32:14 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
