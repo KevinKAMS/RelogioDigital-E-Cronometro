@@ -1,11 +1,11 @@
-# Relógio Digital
+﻿# Relógio Digital
 Relogio digital ativado quando a primeira alavanca está em estado 1, tem as funções de:
-Mudar hora
+ $ Mudar hora $ 
 Mudar minuto
-Resetar segundos
+ $ Resetar segundos
 
 # Cronometro
 Cronometro ativado quando a primeira alavanca está em estado 0, tem as funções de:
-Iniciar contagem
-Parar contagem
+ $ Iniciar contagem $ 
+Parar contagem $ 
 Resetar contagem
